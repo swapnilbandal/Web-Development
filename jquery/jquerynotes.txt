@@ -1,0 +1,32 @@
+jquery: it is javascript library    
+        it simplifies javascript code
+        it is open source
+    
+    the main purpose of jquery is to make javascript code much easiear to use it in application
+
+    what we can do with jquery
+    Dom manipulation
+    use css 
+    use javascript event
+
+    two ways to use jquery
+    cdn 
+    downloading
+
+
+    $(document).ready(function(){
+        logical code
+    })
+
+ready method: it prevent execution of logical (jquery) code before loading of html code or document.
+selectors: it is use to select an element
+            it plays most important role in jquery
+        1. element selector: we use element name directly.
+        2. id selector: it is use to select single element
+        3. class selector: it is use to select multiple elements.
+        4. this keyword: it will represent current element
+click,mouseover,mouseleave
+how to use css,how to use multiple function or event
+*on method: it is used to apply multip;e event to an single element
+
+animate: to apply first we have to change element position:relative

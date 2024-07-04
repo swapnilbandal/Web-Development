@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id">Hello Everyone</div>
+    <ul id="d2"></ul>
+    <script>
+
+        let parentEle = document.getElementById("d1")
+        console.log(parentEle)
+        let newPara = document.createElement()
+        let fruits=["a","d"]
+        let parentUlTag= document.getElementById("d2")
+        for(let i=0;i<fruits.length;i++){
+            let newLiTag=document.createElement("li")
+            newLiTag.innerHTML=fruits[i]
+            parentUlTag.appendChild(newLiTag)
+        }
+
+    </script>
+</body>
+</html>

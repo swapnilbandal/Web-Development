@@ -1,0 +1,38 @@
+.new{
+    border: dashed;
+    height: 600px;
+    width: 600px;
+    position: relative;
+}
+
+h1{
+    border: dashed;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+
+}
+.tl{
+position: absolute;
+margin-top: 0px;
+margin-left: 0px;
+}
+
+.tr{
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.bl{
+        position: absolute;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+.br{
+            position: absolute;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            
+            }
+
+            

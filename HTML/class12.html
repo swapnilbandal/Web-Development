@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./calculator.js"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="num1" name="num1" placeholder="enter first number: "><br>
+        <input type="text" id="num2" name="num2" placeholder="enter second number: "><br>
+        <button type="button" onclick="add()">Calculate</button>
+        <h4>Result: <span id="res"></span></h4>
+    </form>
+
+    <h2 id="d1"></h2>
+    <h2 id="d2">Kailas</h2>
+    <h2 id="d3">Bandal</h2>
+    <script>
+        document.getElementById("d1").innerHTML = "swapnil"
+        let data = document.getElementById("d1").innerHTML
+        console.log(data)
+        document.getElementById("d2").style.color = "red"
+        document.getElementById("d3").style.backgroundColor = "aqua"
+
+        let students = ["swapnil", "ganesh", "pranav"]
+        console.log(students)
+        document.write(students[1], "<br>")
+        document.write(students.length, "<br>")
+        students[1] = "Mayur"
+        document.write(students[1], "<br>")
+        //push
+        students.push("Tushar")
+        document.write("push (Tushar) =>", students, "<br>")
+
+        //pop
+        students.pop()
+        document.write("Pop last element => ", students, "<br>")
+
+        //unshift
+        students.unshift("a", "b")
+        document.write(students, "<br>")
+
+        //shift
+        students.shift()
+        document.write(students, "<br>")
+
+        //splice(startindex, deleteCount,data to insert)
+        //it is used to insert and remove values from middle of array
+        //students.splice(2,0,"newname","newname2")
+        document.write(students, "<br>")
+
+        //document.splice(3,2)
+        document.write(students, "<br>")
+
+        //toString: it convert array data into string 
+        console.log(students)
+        console.log(students.toString())
+
+        //join(seprator): it convert array data into string, it takes one parameter to seprate data
+        console.log(students)
+        console.log(students.join("*"))
+        console.log(students.join("$"))
+        console.log(students.join(" "))
+
+        //array method
+        //for in
+        //for of
+        for (i in students) {
+            document.write(students[i], "<br>")
+        }
+        for (i in students) {
+            document.write(i + ",")
+        }
+   
+        document.write("<br>")
+        for (i of students) {
+            document.write(i + ",")
+        }
+        document.write("<br>")
+
+        emp = {
+            id: 101,
+            name: "Swapnil",
+            post: "Java Developer",
+            salary: 95000,
+            address: {
+                city: "pune",
+                pin: 12012
+            },
+            details: function () {
+                return 100
+            }
+        }
+        document.write(`${emp.id} ${emp.name} ${emp.post} ${emp.salary} ${emp.address.city}`)
+        document.write("<br>")
+        document.write(emp.details())
+        fruits = ["Apple","Banana", "Grapes", "Watermelon"]
+        for(i=0;i<fruits.length;i++){
+            document.write(fruits[i]," ")
+        }
+
+
+        std=[
+            {id:101,name:"swapnil",grade:"A"},
+            {id:102,name:"pranav",grade:"B"},
+            {id:103,name:"Ganesh",grade:"C"},
+            {id:104,name:"Anil",grade:"D"}]
+
+        for (let i=0;i<std.length;i++){
+            document.write(`${std[i].name}`)
+        }
+        document.write("<br>")
+        for (i of std){
+            document.write(`$std[i].id`)
+        }
+        document.write("<br>")
+        jsonData = JSON.stringify(emp)
+        document.write(jsonData)
+        document.write("<br>")
+        objectData = JSON.parse(jsonData)
+    </script>
+</body>
+
+</html>

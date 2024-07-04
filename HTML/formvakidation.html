@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+    .error {
+        color: red;
+        font-size: 0.8em;
+    }
+</style>
+</head>
+<body>
+<h1>Form Validation</h1>
+<form id="myForm" onsubmit="return validateForm()">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+<script>
+    function validateForm() {
+        let email = document.getElementById("email").value;
+        let emailError = document.getElementById("emailError");
+        let isValid = true;
+
+        // Check if email is empty
+        if (email.trim() === "") {
+            emailError.innerText = "Email is required";
+            isValid = false;
+        } else {
+            emailError.innerText = "";
+        }
+
+        // Check if email is valid
+        if (!isValidEmail(email)) {
+            emailError.innerText = "Invalid email format";
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
+    function isValidEmail(email) {
+        // Regular expression for email validation
+        let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+</script>
+</body>
+</html>

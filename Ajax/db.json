@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "101",
+      "name": "Laptop",
+      "pprice": "55000",
+      "pcompany": "HP"
+    },
+    {
+      "id": "102",
+      "name": "Mouse",
+      "pprice": "45000",
+      "pcompany": "Acer"
+    },
+    {
+      "id": "103",
+      "name": "Cable",
+      "pprice": "50000",
+      "pcompany": "Lenovo"
+    },
+    {
+      "id": "104",
+      "name": "Charger",
+      "pprice": "75000",
+      "pcompany": "Dell"
+    },
+    {
+      "id": "105",
+      "name": "Mousepad",
+      "pprice": "91000",
+      "pcompany": "Intel"
+    },
+    {
+      "id": "106",
+      "name": "Usb",
+      "pprice": "55000",
+      "pcompany": "Apple"
+    },
+    {
+      "id": "107",
+      "name": "Laptop",
+      "pprice": "87000",
+      "pcompany": "HP"
+    },
+    {
+      "name": "GANESH",
+      "price": "655454",
+      "company": "BAGUL",
+      "id": "108"
+    }
+  ]
+}

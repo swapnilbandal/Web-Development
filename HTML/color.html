@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    
+    <script>
+        msg="Welcome To Infoway swapnil pranav ganesh new Infoway"
+        document.getElementById("d1").innerHTML =msg
+        document.getElementById("d2").innerHTML =msg.length
+        document.getElementById("d3").innerHTML =msg.toLowerCase()
+        document.getElementById("d4").innerHTML =msg.toUpperCase()
+        document.getElementById("d5").innerHTML =msg
+
+    //index of searching string
+    //indexOf(searching string,start index)
+    //it return index of first occurance
+    //return -1 as result if not found
+        document.getElementById("d5").innerHTML= msg.indexOf("To")
+        document.getElementById("d6").innerHTML= msg.lastIndexOf("To")
+
+
+        document.getElementById("d7").innerHTML= msg.slice(10)
+        document.getElementById("d8").innerHTML= msg.slice(10,15)
+        document.getElementById("d9").innerHTML= msg.slice(-10,-5)
+
+    //use of substring
+        document.getElementById("d10").innerHTML= msg.substring(10)
+        document.getElementById("d11").innerHTML= msg.substring(10,5)
+
+    //substr
+        document.getElementById("d12").innerHTML= msg.substr(10,5)
+
+    //use of replace method
+        document.getElementById("d13").innerHTML= msg.replace("Infoway","iit")
+        document.getElementById("d14").innerHTML= msg.replaceAll("Infoway","iit")
+        document.getElementById("d15").innerHTML= msg.replace(/infoway/ig,"iit")
+
+    //split
+        console.log(msg.split(" "))
+
+    //trim
+    //it remove unwanted white space
+        msg1="          Welcome     to                    infoway          "
+        document.getElementById("d16").innerHTML= msg1.trim()
+        document.getElementById("d17").innerHTML= msg1.trimStart()
+        document.getElementById("d18").innerHTML= msg1.trimEnd()
+        
+    //callback function
+    //passing one function name as argument of another function
+
+    function welcome(){
+        document.write("Welcome you all in my session")
+    }
+
+    function greeting(){
+        document.write("Good Evening Everyone");
+        welcome()   
+    }
+    greeting()
+
+    num=[1,2,3,4,5,6,7,8,9,10,12,13,4,5]
+   //map(): it call another method once for each array element anf it return new array after performing manipulation with with array data
+    let mapOutput = num.map((val)=>{
+        return val * 5
+    })
+    console.log(mapOutput)
+
+    //3. filter: it call another ;method once for  each array element ant it return new array of those ;element eho satisfy 
+    let filterOutput = num.filter((val)=>{
+        return val >= 5 && val <= 15
+    })
+    console.log(filterOutput)
+
+    //4. every(): it call another method once for each array element and it return true value if all array after performing 
+    let everyOutput = num.every((val)=>{
+        return val > 0
+    })
+    console.log(everyOutput)
+
+    //5. some(): it call another method once for each array element and it return true value if some array values satisfy given condition
+    
+    let someOutput = num.some((val)=>{
+        return val >19
+    })
+    console.log(someOutput)
+
+    //6. reduce/reduceRight: it return array as single value
+
+    let reduceOutput = num.reduce((prev,next)=>{
+        return prev+next
+    })
+    console.log(reduceOutput)
+
+    </script>
+</body>
+</html>

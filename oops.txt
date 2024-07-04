@@ -1,0 +1,30 @@
+//oops 
+it provide security to our code
+code reusability
+easy to maintain
+
+//features
+1.class:    collection of data member and member function
+            blueprint of object and it is a logical entity
+            it is a template which we can re-use.
+            class name must start with capital letter.
+
+2.object:   it is an instance of class . with thr help of object we can access class data-member and member-function outside class
+*constructor:    it is special member function of class.
+                it execute automatically when class object is create or initialize
+                constructor name should be only constructor
+3.inheritance:  
+super: it represent parent class constructor inside child class constructor
+        it must be first statement in child class constructor
+4.encapsulation: wrapping of data into single unit
+5.Abstraction: hiding unnecceasaary data and showing only required thing.
+        static data member and member function will be accessible onl;y outside class with classname only t o make static data member we use static keyword
+6.Polymorphism: its ability to take more than one form
+
+method overloading : when we have multiple method with same name in same class
+method overriding : when we have multiple method with same name in different class.
+
+Modules: it contain single or multiple js file which had specific use
+        in this if you want to; share data from onr file to another for that er use "export" keyword
+        if you want to access data from another file for that we use impoer keyword.
+

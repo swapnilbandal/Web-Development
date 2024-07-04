@@ -1,0 +1,43 @@
+it is html css javascript framework.
+it is used to design web application attractive, responsive and make it mobile friendly
+latest version bootsrtrap 5
+
+library perform dedicated work
+framework is a collection of library
+
+# To ways to use bootsrtrap=>
+1) cdn (content delivery network) link
+2) by downloading
+
+bootsrtrap provide us inbuilt classes.
+container it will take 15px margin from left and right side of element 
+and it covert it into block.
+
+warning => yellow
+danger => red
+success => green
+
+rounded: round the corner
+img-thumbnail: add border
+
+grid: to make web application responsive
+in bootsrtrap we have two classes row and column
+in grid row we can create column with size 12 only if larger than 12 it will take new row
+
+col-xl-2 
+col-lg-3 
+col-md-4
+col-sm-6
+
+##task
+--image in grid
+
+*card: it is container which include product image with its information.
+
+from validation in bootsrtrap
+there are two classes to perform from validation
+.was validated: it will perform form validation before submitting it
+.needs-validation:perform validation after submitting form
+
+valid feedback: it woll disp;ay no error
+invalid feedback: it woll disp;ay there is error

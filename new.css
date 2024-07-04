@@ -1,0 +1,26 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+h1{ 
+    text-align: center;
+    color: orangered;
+    background-color: aqua;
+}
+img{
+    border-radius: 50%;
+    align-content: center;
+    border-style:solid;
+    border-color: orangered;
+    box-shadow: 10 px;
+}
+p,h1{
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+}
+#d1{
+    background-color: color-mix(in srgb, blue 50%, orangered 50% );
+}

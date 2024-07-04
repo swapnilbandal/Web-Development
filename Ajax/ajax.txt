@@ -1,0 +1,16 @@
+AJAX:
+asynchronous javascript:
+json:   -javascript object notation
+        -it look like javascript object, in that data store in key and valur pair fornat 
+        -it is denoted by {} and key and value are seprated by :
+        -if you want to access data outside it for that we write object.keyname
+        -data is in text format
+
+-json data is more convenient to fetch from and send to server.
+//how to up;load database on json-server
+json-server --watch -p 9999 db.json
+
+GET: it will retutn us a data
+Delete: it will delete data
+POST: it is used to add data
+PUT: it is used to update data

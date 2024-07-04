@@ -1,0 +1,103 @@
+css: it is use ti design web applications.
+cascading style sheet.
+latest version is css3.
+
+ways to use css
+inline css:we include css in every line where we want.
+internal css: we include css using style tag in head section.
+external css: we create seprate css file and import in html file.
+it will be easy to maintain.
+
+selector: selecting an element
+1. element selector we use element name directly.
+2. group selector her we make group and apply common css.
+3. id selector(#) for applying only on one paraticular element.
+4. class selector(.) when we have to apply comman property to an multiple 
+5. universal selector.(*) when we have to apply css property to all available in webpahe in that case we use it.
+
+
+inspect element:
+box model concept
+content
+padding it is use to clear area between content and border
+border line drawn around a content is border
+margin (it is use to clear area in between element border and screen window)
+
+possition: it is use to move elemlents after applying left,right, top, bottom value.
+possition: static
+position relative :=> element will move to left, right, top, bottom direction  //parent
+position absolute :=> when we want to child element must work according to its parent //child
+position fixed :=> when we want to fixed element at paraticular position.
+
+
+position sticky when we want to stick 
+position 
+
+.grandfather .
+child combinators li >a apply to only anker tag in li
+sibling combinators +
+general sibling combinators
+.grandfather ~p
+
+
+task: position
+task: design your table of resume
+
+opacity : it is used to make background transperant.
+its value vary in between 0 and 1 only. 1 => dark 0=> total transperant
+
+overflow it is used to fit big content into small box
+overflow: visible;
+overflow: hidden;
+ovewrflow scroll;
+overflow: auto;
+
+
+diff between id and class selector 
+id for single element class for 
+
+diff bet z index and opacity 
+z index is used to decide stack of index
+
+diff bet display:block, display:inline, display: inline-block
+display block : when we have to convert inline element into block element
+display inline:  convert block element into inline element
+inline block:  when we have to apply height and width to an ekement in that case we use this property and value.
+
+box sizing : keep the original width as given, despite adding padding and margin.
+box sizing:border-box;
+
+media query : it is used to apply differnt style rule according to differnt screen width.
+screen width>= 1200: xl
+screen width>= 992: lg
+screen width>= 768: md
+screen width>= 576: sm
+screen width< 576: xsm
+
+
+@media screen and (breakpoint){
+    css code
+}
+
+
+@media screen and (max-width:320px){
+    css properties;
+}
+
+breakpoint:
+max-length: rule will be applicable from 0px to its max-width
+min-length: 
+
+display-flex: it is used to manage element layouat on web page properly according to different screen width.
+we have to apply display flex properties to parent elenent.
+flex-wrap: wrap;
+justify-content: center;
+
+form:
+    padding:
+
+sse server sent event: allow to automatic update.
+
+iframe: to create a window.
+
+

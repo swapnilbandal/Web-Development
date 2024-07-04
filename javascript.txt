@@ -1,0 +1,87 @@
+javascript:
+it is use to add functionality and behaviour into web app.
+it is loosly type language
+there are two ways to use javascript
+internal javascript: in html file we will script tag
+external javascript: we create a seprate js file and impioert ut by using sctruipt tag
+
+javascript is object base language
+in javascript window is global object
+how to display output in javascript
+documendt.write ():it will diap;ay output in webpage
+window.alert(): it will generate one popup window.
+console.log : it is use q2w3tr for console purpose.
+dom document objecat model
+document.getElementById("d1").innerHTML = "Cdac Infoway Kothrud";
+
+
+why javascript is called as loosly typed language?
+ans=> when we create a variable in javascript we cannot determine what type of data it contains until and unless we initialize it.
+
+what is differancr between let, var and const keyword?
+
+
+Function:
+ut us block of code which is use to perform particular operation.
+function will execute only when we call it.
+it can be use multiple times.
+
+function functionName(){
+    //code
+}
+
+function with return value:
+anonymous function function without functionName
+arrow function: function with no name and noe funcdtion keyword called arrow
+()=>{}
+
+
+//array
+it is used to store multiple values with same data type 
+
+//for of to display array data
+
+//convert object data into json;
+json.stringify
+
+string it is a collection of characters
+in string 
+
+//lastindexOf()
+
+//search
+faster than index of methodd
+search from left to right
+
+there are three methods which return part of string by passing index number
+4. slice(startindex, endindex)
+if we write +ve index then it will reach from left to right.
+if we write -ve index then it will reach from right to left.
+
+5. Substring(startindex, endindex)
+it will return part of string
+if we write negative index it wont give any value
+
+settimeout(callfunction,duration)
+setInterval(callback,duration)
+//it will call another method multiple after particular time interval
+2009 ECMA script-5 or ES-5
+2015 ECMA script-6 or ES-6
+
+//foeEach: it will call another method once fo;r; eaach array getElementById
+courses.forEach((val,index)=>{
+    console.log(val)
+})
+
+
+//form validation
+before
+after
+
+//Password,email,contact
+//jquery
+//ajax
+//node
+//express
+//react
+//exam

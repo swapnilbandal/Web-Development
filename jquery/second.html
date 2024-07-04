@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Welcome You all when you click on me</h1>
+    <h2>Welcome You all when you click on me</h2>
+    <h3>Welcome You all when you click on me</h3>
+    <h4>Welcome You all when you click on me</h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laudantium, sit obcaecati facere quas odit perferendis temporibus tempora eaque sed itaque omnis distinctio at odio repellat recusandae culpa numquam beatae.
+    </p>
+    <script>
+        $(document).ready(function(){
+            $("h1").click(()=>{
+                $("p").hide()
+            })
+            $("h2").dblclick(()=>{
+                $("p").show()
+            })
+            $("h3").mouseover(()=>{
+                $("p").show()
+            })
+            $("h4").mouseover(()=>{
+                $("p").hide()
+            })
+        })
+        
+    </script>
+</body>
+</html>

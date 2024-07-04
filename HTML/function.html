@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //1.default function
+        function greeting() {
+            document.write("Good morning!","<br>")
+        }
+        greeting()
+        //2.parameterized function
+        function welcome(a){
+            document.write("Welcome",a,"<br>")
+            document.write(`Welcome ${a} <br>`)
+        }
+        a="swapnil"
+        welcome(" ganesh ");
+
+        function addition(a,b){
+            return a+b
+        }
+        document.write(addition(4,5),"<br>")
+        let add=addition(10,20)
+        document.write(add)
+        //anonymous function
+        let sub = function(a,b){
+            return a-b
+        }
+        console.log(sub(500,200)) //output on console 
+
+        //3.arrow function
+        let mul1=(a,b) => {
+            return a*b
+        }
+        console.log(mul1(2,4))
+        //arrow function
+        let mul =(a,b) => a*b
+        console.log(mul(50,45))
+
+        //5.optional parameter function
+        let fullname=(fname,lname,mname="")=>{
+            return fname+mname+lname
+        }
+        console.log(fullname("Swapnil","Bandal","Kailas"))
+
+        //6. rest parameterized function when we dint know how many paremeters are there in function
+        //here awe use spread operator(...)
+
+        let stdList =(...s)=>{
+            return s
+        }
+        console.log("swapnil","Ganesh","Pranav")
+
+
+    </script>
+</body>
+
+</html>

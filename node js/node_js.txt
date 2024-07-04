@@ -1,0 +1,61 @@
+how to enter repl environment
+write node and press enter
+
+each module in node.js has its own context, so it cannot interface 
+
+types 
+    core modules:
+        module developed by node.js itself.
+        we need to import bare minimum fuctionalities.
+        we need to import the core module
+        the core module are compiled into its binary distribution and load automatically when node.js process starts.
+
+        eg. http: to create http server in node.js
+            os: provide information about operating system
+            path: to handle file path
+            url: to parse the url string
+            fs: to handle file system in computer
+            querystring: to handle url query string
+            util: to access utility function
+
+        import syntax: const path = require('path')
+path module: it is use for file related to path operation
+            in node by default we have two objects
+            __dirname : it will return directory
+            __filename : it will return current filename with dir path.
+
+
+
+    local modules module created by developer
+    third party modules: module developed by third party
+                        first we need to install it then import it.
+
+
+local modules:
+
+npm:
+ node package manager(npm) is a command line tool that install,updates or unistalls Node.js package in your application
+ it is also
+    
+
+    blocking and non blocking
+    blocking is when the execution of additional javascript in the node
+
+    callback
+    a callback is a function called at the completion of a given task; this prevents any blocking, 
+    and allows other code to be run in the meantime.
+    the general idea is that the callback is the last parameter. the callback gets called after the function is d;one  
+    with all of its operations. Traditionally the first parameter of the callback with the error value. if the function hits an 
+    error, then they typically call the callback with the first parameter being an error object. if it cleanly exists, 
+    then they will call the callback with the first parameter being null and the rest being the return value(s).
+
+    Event: every action on computer is an evrnt.
+    all event properties and methods are an instsnce of an event emmiter object. to be able to access these properties and methos create an enentemmiter object.
+
+    var events = require('events")
+    var em=new events.eventEmitter()
+    emit is used to trigger the event
+    on is used to add a callback function thats going to be executed when the event is triggered
+
+    .env = it is used to keep secret file
+    npm i dot-env

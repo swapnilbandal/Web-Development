@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./jquery.min.js"></script>
+</head>
+
+<body>
+    <strong id="d1">Click me to hide image</strong> &nbsp;&nbsp;
+    <strong id="d2">Click me to show image</strong><br><br>
+    <img id="d3" src="./rohit.jpeg" alt="swapnil" height="300px" width="300px">
+    <h1 id="name">I am Swapnil Bandal</h1>
+    <h1 id="h4">chvksdhvkjds</h1>
+    <script>
+        $(document).ready(function () {
+            $("#d1").click(() => {
+                $("#d3").hide()
+            })
+            $("#d2").click(() => {
+                $("#d3").show()
+            })
+            $("#name").mouseover(function(){
+                $(this).css({"color":"red","text-transform":"lowercase"})
+            })
+            $("#name").mouseleave(function(){
+                $(this).css({"color":"green","text-transform":"uppercase"})
+            })
+            $("#h4").click(function(){
+                $(this).css({"color":"red","background-color":"aqua","text-transform":"capitalize"})
+            })
+        })
+
+    </script>
+</body>
+
+</html>

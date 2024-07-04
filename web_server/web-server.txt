@@ -1,0 +1,7 @@
+Web Server project
+
+package.json create it
+npm init or npm 
+npm i express 
+npm i dotenv 
+npm i nodemon

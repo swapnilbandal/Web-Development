@@ -1,0 +1,31 @@
+body{
+    background-image:url(./images/Fast_food_Hamburger_Buns_Tomatoes_French_fries_576086_1280x853.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+h1{
+    text-align: center;
+    padding-right: 300px;
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    float: right;
+}
+ 
+.main img{
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.new1, ul{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orangered;
+    font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+
+}
+  
